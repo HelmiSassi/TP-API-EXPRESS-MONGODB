@@ -8,6 +8,8 @@ router.get('/', salariesController.show);
 
 router.post('/add', salariesController.save);
 
+router.put('/edit',salariesController.update);
+
 router.get('/select/:id', salariesController.edit);
 
 router.get('/delete/:id', salariesController.delete);

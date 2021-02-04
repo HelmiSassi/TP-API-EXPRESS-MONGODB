@@ -39,7 +39,7 @@ salariesController.delete = function (req, res) {
 
 salariesController.save = function (req, res) {
 
-    if (req.body.id == 0) {
+    //if (req.body.id == 0) {
 
         var body = req.body;
         body.status = false;
@@ -47,25 +47,27 @@ salariesController.save = function (req, res) {
         model.create(body, (err, result) => {
             if (err) { console.log(err); }
             res.send(result);
+            console.log(result)
         });
-
     }
-    else {
+    //};
+salariesController.update = function (req, res) {
 
         var body = req.body;
 
-        model.updateOne({ _id: body.id }, {
+       model.updateOne({ _id: body.id }, {
             $set: {
-                nom: body.nom,
-                prenom :body.prenom,
+               nom: body.nom,
+              prenom :body.prenom,
                 adresse : body.adresse
             }
         }, { multi: true }, (error, result) => {
-            if (error)
+             if (error)
                 throw error;
-            res.send(result);
-        });
-    }
-}
+             res.send(result);
+         });
+     };
+    
+
 
 module.exports = salariesController;

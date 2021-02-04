@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "601c1ad9f7735f0bd439abdc"
+  },
+  "nom": "Pop",
+  "prenom": "Corn",
+  "adresse": "Coca",
+  "status": true
+},{
+  "_id": {
+    "$oid": "601c633af7323206d895c41a"
+  },
+  "nom": "maya",
+  "prenom": "l'abeille",
+  "adresse": "forêt",
+  "status": false
+},{
+  "_id": {
+    "$oid": "601c6396f7323206d895c41b"
+  },
+  "nom": "bob",
+  "prenom": "sponge",
+  "adresse": "anime",
+  "status": false
+},{
+  "_id": {
+    "$oid": "601c640cf7323206d895c41e"
+  },
+  "nom": "casse",
+  "prenom": "croute",
+  "adresse": "boulangerie",
+  "status": false
+}]
